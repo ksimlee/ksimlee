@@ -1,0 +1,1713 @@
+html {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: overlay;
+  overflow-x: hidden;
+  height: 100%;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+strong {
+  color: #009ee0 !important;
+  font-family: "Helvetica Neue LT W01_85 Heavy" !important;
+  font-weight: normal !important;
+}
+
+li {
+  font-family: "Helvetica Neue LT W01_55 Roman";
+}
+
+a {
+  color: #e30059;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #e30059;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.instagram-icon {
+  background-image: url(../images/icons/ig-logo-blue.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 72px;
+  bottom: 52px;
+}
+
+.instagram-icon:hover {
+  background-image: url(../images/icons/ig-logo-pink.svg);
+}
+
+.section-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /* STANDARD SCREEN STYLE */
+  /* TOP RIGHT ICON NAVIGATION */
+  /* FULL-PAGE GALLERY SITE */
+  /* INDEX MENU TEST */
+  /* MENU SEITE */
+}
+
+.section-wrapper header {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  z-index: 9999;
+  position: fixed;
+}
+
+.section-wrapper.standard-screen {
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.section-wrapper.standard-screen .suche .suchergebnisse h2 {
+  margin-bottom: 10px;
+}
+
+.section-wrapper.standard-screen .suche .suchergebnisse p.url {
+  margin-bottom: 5px;
+}
+
+.section-wrapper.standard-screen .suche .widget {
+  position: relative;
+}
+
+.section-wrapper.standard-screen .suche .text {
+  width: 100%;
+  height: 50px;
+  padding-left: 12px;
+  padding-right: 60px;
+  border: 1px solid #009ee0;
+  margin-bottom: 15px;
+}
+
+.section-wrapper.standard-screen .suche .submit {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  width: 37px;
+  height: 37px;
+  border: none;
+  background: none;
+  background-image: url(../images/icons/search-icon-blau.svg);
+}
+
+.section-wrapper.standard-screen .suche .submit:focus {
+  outline: none;
+}
+
+.section-wrapper.standard-screen .nav {
+  position: fixed;
+}
+
+.section-wrapper.standard-screen .logo {
+  position: fixed;
+}
+
+.section-wrapper.standard-screen .mod_rocksolid_slider .rsts-view {
+  position: relative;
+}
+
+.section-wrapper.standard-screen .mod_rocksolid_slider .rsts-slides .rsts-slide {
+  width: 100%;
+}
+
+.section-wrapper.standard-screen .mod_rocksolid_slider .rsts-slides .rsts-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.section-wrapper.standard-screen .mod_rocksolid_slider .rsts-prev {
+  background-image: url(../images/icons/prev.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  z-index: 999;
+  border: none;
+  webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.section-wrapper.standard-screen .mod_rocksolid_slider .rsts-prev:hover {
+  background-image: url(../images/icons/prev_pink.svg);
+  background-color: transparent;
+  border: none;
+}
+
+.section-wrapper.standard-screen .mod_rocksolid_slider .rsts-prev span {
+  display: block;
+  width: 30px;
+  height: 19px;
+}
+
+.section-wrapper.standard-screen .mod_rocksolid_slider .rsts-next {
+  background-image: url(../images/icons/next.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  z-index: 999;
+  border: none;
+  webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.section-wrapper.standard-screen .mod_rocksolid_slider .rsts-next:hover {
+  background-image: url(../images/icons/next_pink.svg);
+  background-color: transparent;
+  border: none;
+}
+
+.section-wrapper.standard-screen .mod_rocksolid_slider .rsts-next span {
+  display: block;
+  width: 30px;
+  height: 19px;
+}
+
+.section-wrapper .ferientermine-content table tr td {
+  vertical-align: top;
+}
+
+.section-wrapper .ferientermine-content table tr td:first-child {
+  color: #009ee0;
+  min-width: 150px;
+}
+
+.section-wrapper .semestertermine-content table tr td {
+  vertical-align: top;
+}
+
+.section-wrapper .semestertermine-content table tr td:first-child {
+  min-width: 150px;
+}
+
+.section-wrapper .semestertermine-content table tr td strong {
+  font-size: 14px;
+  color: #009ee0;
+  font-weight: normal;
+}
+
+.section-wrapper .ferientermine-content table,
+.section-wrapper .semestertermine-content table {
+  width: auto !important;
+  height: auto !important;
+}
+
+.section-wrapper .lehrpersonen-content p {
+  column-count: 2;
+}
+
+.section-wrapper .origamis {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  mix-blend-mode: multiply;
+}
+
+.section-wrapper.origami-aktuell .origami-aktuell-top, .section-wrapper.origami-aktuell .origami-aktuell-left, .section-wrapper.origami-aktuell .origami-aktuell-right {
+  display: block;
+}
+
+.section-wrapper.origami-schule .origami-schule-left-small, .section-wrapper.origami-schule .origami-schule-left-big, .section-wrapper.origami-schule .origami-schule-right {
+  display: block;
+}
+
+.section-wrapper.origami-unterricht .origami-unterricht-top, .section-wrapper.origami-unterricht .origami-unterricht-left-small, .section-wrapper.origami-unterricht .origami-unterricht-left-big, .section-wrapper.origami-unterricht .origami-unterricht-right-small, .section-wrapper.origami-unterricht .origami-unterricht-right-big {
+  display: block;
+}
+
+.section-wrapper.origami-default .origami-default-top, .section-wrapper.origami-default .origami-default-left, .section-wrapper.origami-default .origami-default-right {
+  display: block;
+}
+
+.section-wrapper.origami-weitere-seiten .origami-weitere-left-small, .section-wrapper.origami-weitere-seiten .origami-weitere-left-big, .section-wrapper.origami-weitere-seiten .origami-weitere-right-small, .section-wrapper.origami-weitere-seiten .origami-weitere-right-big {
+  display: block;
+}
+
+.section-wrapper .origami-aktuell-top {
+  right: 514px;
+  top: 0;
+  width: 98px;
+}
+
+.section-wrapper .origami-aktuell-left {
+  top: 333px;
+  left: 160px;
+  width: 236px;
+}
+
+.section-wrapper .origami-aktuell-right {
+  bottom: 0;
+  right: 43px;
+  width: 283px;
+}
+
+.section-wrapper .origami-schule-left-small {
+  left: 279px;
+  top: 167px;
+  width: 59px;
+}
+
+.section-wrapper .origami-schule-left-big {
+  bottom: 0;
+  left: 43px;
+  width: 128px;
+}
+
+.section-wrapper .origami-schule-right {
+  top: 333px;
+  right: 43px;
+  width: 236px;
+}
+
+.section-wrapper .origami-unterricht-top {
+  top: 33px;
+  right: 514px;
+  width: 59px;
+}
+
+.section-wrapper .origami-unterricht-left-small {
+  top: 250px;
+  left: 102px;
+  width: 59px;
+}
+
+.section-wrapper .origami-unterricht-left-big {
+  bottom: 200px;
+  left: 184px;
+  width: 141px;
+}
+
+.section-wrapper .origami-unterricht-right-small {
+  top: 417px;
+  right: 161px;
+  width: 59px;
+}
+
+.section-wrapper .origami-unterricht-right-big {
+  bottom: 0;
+  right: 220px;
+  width: 178px;
+}
+
+.section-wrapper .origami-default-top {
+  top: 0;
+  left: 514px;
+  width: 59px;
+}
+
+.section-wrapper .origami-default-left {
+  bottom: 200px;
+  left: 43px;
+  width: 283px;
+}
+
+.section-wrapper .origami-default-right {
+  top: 333px;
+  right: 220px;
+  width: 118px;
+}
+
+.section-wrapper .origami-weitere-left-small {
+  top: 167px;
+  left: 43px;
+  width: 59px;
+}
+
+.section-wrapper .origami-weitere-left-big {
+  bottom: 0;
+  left: 43px;
+  width: 236px;
+}
+
+.section-wrapper .origami-weitere-right-small {
+  bottom: 0;
+  right: 161px;
+  width: 59px;
+}
+
+.section-wrapper .origami-weitere-right-big {
+  top: 200px;
+  right: 43px;
+  width: 283px;
+}
+
+.section-wrapper .content-wrapper {
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  float: left;
+}
+
+.section-wrapper .content-wrapper .content-inner {
+  position: relative;
+  left: -50%;
+  float: left;
+  width: 100%;
+}
+
+.section-wrapper .content-wrapper .content-inner h1 {
+  font-family: "Helvetica Neue LT W01_95 Black";
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 60px;
+  color: #009ee0;
+}
+
+.section-wrapper .content-wrapper .content-inner a:hover, .section-wrapper .content-wrapper .content-inner a:focus, .section-wrapper .content-wrapper .content-inner a:active, .section-wrapper .content-wrapper .content-inner a:visited {
+  text-decoration: none;
+}
+
+.section-wrapper .content-wrapper .content-inner a:hover h2, .section-wrapper .content-wrapper .content-inner a:focus h2, .section-wrapper .content-wrapper .content-inner a:active h2, .section-wrapper .content-wrapper .content-inner a:visited h2 {
+  color: #000000;
+  text-decoration: none;
+}
+
+.section-wrapper .content-wrapper .content-inner a h2 {
+  color: #e30059;
+  text-decoration: none;
+}
+
+.section-wrapper .content-wrapper .content-inner h2 {
+  font-family: "Helvetica Neue LT W01_95 Black";
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #009ee0;
+  text-decoration: none;
+}
+
+.section-wrapper .content-wrapper .content-inner .uebersicht-item {
+  margin-bottom: 30px;
+}
+
+.section-wrapper .content-wrapper .content-inner .uebersicht-item h2 {
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.section-wrapper .content-wrapper .content-inner .uebersicht-item strong {
+  font-size: 14px;
+  font-family: "Helvetica Neue LT W01_85 Heavy";
+}
+
+.section-wrapper .content-wrapper .content-inner p {
+  font-family: "Helvetica Neue LT W01_55 Roman";
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 18px;
+}
+
+.section-wrapper .content-wrapper .content-inner ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+
+.section-wrapper .content-wrapper .content-inner ul li {
+  text-indent: -24px;
+  margin-left: 24px;
+  margin-bottom: 8px;
+}
+
+.section-wrapper .content-wrapper .content-inner ul li:before {
+  content: '\2014';
+  color: #009ee0;
+  margin-right: 10px;
+}
+
+.section-wrapper .content-wrapper .content-inner .lehrpersonen-navigation {
+  margin: 0 auto;
+}
+
+.section-wrapper .content-wrapper .content-inner .lehrpersonen-navigation li {
+  width: 95px;
+  height: 95px;
+  display: block;
+  float: left;
+  margin-left: 0;
+  text-indent: 0;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.section-wrapper .content-wrapper .content-inner .lehrpersonen-navigation li a {
+  display: block;
+  width: 95px;
+  height: 95px;
+  background-color: #009ee0;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-wrapper .content-wrapper .content-inner .lehrpersonen-navigation li a:hover {
+  background-color: #ffcc00;
+  color: #ffffff;
+}
+
+.section-wrapper .content-wrapper .content-inner .lehrpersonen-navigation li a p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  padding-left: 5px;
+  padding-right: 5px;
+  word-wrap: break-word;
+}
+
+.section-wrapper .content-wrapper .content-inner .lehrpersonen-navigation li:before {
+  display: none;
+}
+
+.section-wrapper .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(6n+6) {
+  margin-right: 0;
+}
+
+.section-wrapper .content-wrapper .presseschauItem .headline h2 {
+  margin-bottom: 15px;
+}
+
+.section-wrapper .nav {
+  position: fixed;
+  right: 72px;
+  top: 52px;
+  z-index: 9999;
+}
+
+.section-wrapper .nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.section-wrapper .nav ul a {
+  float: left;
+}
+
+.section-wrapper .nav ul a li {
+  margin-left: 20px;
+}
+
+.section-wrapper .nav ul a:first-child li {
+  margin-left: 0;
+}
+
+.section-wrapper .nav .communication-icon {
+  display: none;
+}
+
+.section-wrapper .nav .communication-icon li {
+  background-image: url(../images/icons/communication-white.svg);
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 40px;
+  float: left;
+  margin-top: 5px;
+}
+
+.section-wrapper .nav .communication-icon li:hover {
+  background-image: url(../images/icons/communication-black.svg);
+}
+
+.section-wrapper .nav .newspaper-icon li {
+  background-image: url(../images/icons/newspaper-white.svg);
+  background-repeat: no-repeat;
+  width: 39px;
+  height: 40px;
+  float: left;
+  margin-top: 2px;
+  margin-left: 17px;
+}
+
+.section-wrapper .nav .newspaper-icon li:hover {
+  background-image: url(../images/icons/newspaper-white.svg);
+}
+
+.section-wrapper .nav .burger-icon li {
+  background-image: url(../images/icons/burger-standard.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 30px;
+  float: left;
+  margin-top: 6px;
+}
+
+.section-wrapper .nav .burger-icon li:hover {
+  background-image: url(../images/icons/burger-black.svg);
+}
+
+.section-wrapper .nav .mail-icon li {
+  background-image: url(../images/icons/mail-icon.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 26px;
+  float: left;
+  margin-top: 10px;
+}
+
+.section-wrapper .nav .mail-icon li:hover {
+  background-image: url(../images/icons/mail-icon-black.svg);
+}
+
+.section-wrapper .nav .calendar-icon li {
+  background-image: url(../images/icons/calendar-icon.svg);
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 36px;
+  float: left;
+}
+
+.section-wrapper .nav .calendar-icon li:hover {
+  background-image: url(../images/icons/calendar-icon-black.svg);
+}
+
+.section-wrapper .nav .gallery-icon li {
+  background-image: url(../images/icons/gallery-icon-pink.svg);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 35px;
+  float: left;
+}
+
+.section-wrapper .nav .lock-icon li {
+  background-image: url(../images/icons/lock-icon-pink.svg);
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 35px;
+  float: left;
+}
+
+.section-wrapper .nav .search-icon li {
+  background-image: url(../images/icons/search-icon-pink.svg);
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 37px;
+  float: left;
+}
+
+.section-wrapper .nav.menu-site-nav .communication-icon li {
+  background-image: url(../images/icons/communication-blue.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .communication-icon li:hover {
+  background-image: url(../images/icons/communication-pink.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .newspaper-icon li {
+  background-image: url(../images/icons/newspaper-blue.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .newspaper-icon li:hover {
+  background-image: url(../images/icons/newspaper-pink.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .burger-icon li {
+  background-image: url(../images/icons/burger-blau.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .burger-icon li:hover {
+  background-image: url(../images/icons/burger-pink.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .mail-icon li {
+  background-image: url(../images/icons/mail-icon-blau.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .mail-icon li:hover {
+  background-image: url(../images/icons/mail-icon-pink.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .calendar-icon li {
+  background-image: url(../images/icons/calendar-icon-blau.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .calendar-icon li:hover {
+  background-image: url(../images/icons/calendar-icon-pink.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .gallery-icon li {
+  background-image: url(../images/icons/gallery-icon-blau.svg);
+  margin-top: 1px;
+}
+
+.section-wrapper .nav.menu-site-nav .gallery-icon li:hover {
+  background-image: url(../images/icons/gallery-icon-pink.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .lock-icon li {
+  background-image: url(../images/icons/lock-icon-blau.svg);
+  margin-top: 1px;
+}
+
+.section-wrapper .nav.menu-site-nav .lock-icon li:hover {
+  background-image: url(../images/icons/lock-icon-pink.svg);
+}
+
+.section-wrapper .nav.menu-site-nav .search-icon li {
+  background-image: url(../images/icons/search-icon-blau.svg);
+  margin-top: -1px;
+}
+
+.section-wrapper .nav.menu-site-nav .search-icon li:hover {
+  background-image: url(../images/icons/search-icon-pink.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .communication-icon li {
+  background-image: url(../images/icons/communication-blue.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .communication-icon li:hover {
+  background-image: url(../images/icons/communication-pink.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .newspaper-icon li {
+  background-image: url(../images/icons/newspaper-blue.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .newspaper-icon li:hover {
+  background-image: url(../images/icons/newspaper-pink.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .burger-icon li {
+  background-image: url(../images/icons/burger-blau.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .burger-icon li:hover {
+  background-image: url(../images/icons/burger-pink.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .mail-icon li {
+  background-image: url(../images/icons/mail-icon-blau.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .mail-icon li:hover {
+  background-image: url(../images/icons/mail-icon-pink.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .calendar-icon li {
+  background-image: url(../images/icons/calendar-icon-blau.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .calendar-icon li:hover {
+  background-image: url(../images/icons/calendar-icon-pink.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .gallery-icon li {
+  background-image: url(../images/icons/gallery-icon-blau.svg);
+  margin-top: 1px;
+}
+
+.section-wrapper .nav.standard-site-nav .gallery-icon li:hover {
+  background-image: url(../images/icons/gallery-icon-pink.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .lock-icon li {
+  background-image: url(../images/icons/lock-icon-blau.svg);
+  margin-top: 1px;
+}
+
+.section-wrapper .nav.standard-site-nav .lock-icon li:hover {
+  background-image: url(../images/icons/lock-icon-pink.svg);
+}
+
+.section-wrapper .nav.standard-site-nav .search-icon li {
+  background-image: url(../images/icons/search-icon-blau.svg);
+  margin-top: -1px;
+}
+
+.section-wrapper .nav.standard-site-nav .search-icon li:hover {
+  background-image: url(../images/icons/search-icon-pink.svg);
+}
+
+.section-wrapper .logo {
+  height: 70px;
+  position: fixed;
+  top: 36px;
+  left: 72px;
+  z-index: 9999;
+  width: 100%;
+}
+
+.section-wrapper .logo img {
+  height: 70px;
+  width: auto;
+}
+
+.section-wrapper .ce_gallery {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.section-wrapper .background-welcome-screen-wrapper {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.section-wrapper .background-welcome-screen {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: fixed;
+}
+
+.section-wrapper .zuerich {
+  position: fixed;
+  mix-blend-mode: multiply;
+  bottom: 0;
+  left: 0;
+}
+
+.section-wrapper .zuerich img {
+  bottom: 0;
+  height: 100%;
+}
+
+.section-wrapper .diagonale {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.section-wrapper .diagonale img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  right: 0;
+}
+
+.section-wrapper .welcome-text {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 564px;
+  left: 50%;
+  height: 100%;
+}
+
+.section-wrapper .welcome-text img {
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.section-wrapper.home-screen .communication-icon li {
+  background-image: url(../images/icons/communication-white.svg) !important;
+}
+
+.section-wrapper.home-screen .communication-icon li:hover {
+  background-image: url(../images/icons/communication-black.svg) !important;
+}
+
+.section-wrapper.home-screen .newspaper-icon li {
+  background-image: url(../images/icons/newspaper-white.svg) !important;
+}
+
+.section-wrapper.home-screen .newspaper-icon li:hover {
+  background-image: url(../images/icons/newspaper-black.svg) !important;
+}
+
+.section-wrapper.home-screen .lock-icon li {
+  background-image: url(../images/icons/lock-icon-white.svg) !important;
+}
+
+.section-wrapper.home-screen .lock-icon li:hover {
+  background-image: url(../images/icons/lock-icon-black.svg) !important;
+}
+
+.section-wrapper.home-screen .gallery-icon li {
+  background-image: url(../images/icons/gallery-icon-white.svg) !important;
+}
+
+.section-wrapper.home-screen .gallery-icon li:hover {
+  background-image: url(../images/icons/gallery-icon-black.svg) !important;
+}
+
+.section-wrapper.home-screen .search-icon li {
+  background-image: url(../images/icons/search-icon-white.svg) !important;
+}
+
+.section-wrapper.home-screen .search-icon li:hover {
+  background-image: url(../images/icons/search-icon-black.svg) !important;
+}
+
+.section-wrapper.home-screen .calendar-icon li {
+  background-image: url(../images/icons/calendar-icon.svg) !important;
+}
+
+.section-wrapper.home-screen .calendar-icon li:hover {
+  background-image: url(../images/icons/calendar-icon-black.svg) !important;
+}
+
+.section-wrapper.home-screen .mail-icon li {
+  background-image: url(../images/icons/mail-icon.svg) !important;
+}
+
+.section-wrapper.home-screen .mail-icon li:hover {
+  background-image: url(../images/icons/mail-icon-black.svg) !important;
+}
+
+.section-wrapper.home-screen .burger-icon li {
+  background-image: url(../images/icons/burger-standard.svg) !important;
+}
+
+.section-wrapper.home-screen .burger-icon li:hover {
+  background-image: url(../images/icons/burger-black.svg) !important;
+}
+
+.section-wrapper.gallery-screen .origamis {
+  mix-blend-mode: multiply;
+}
+
+.section-wrapper.gallery-screen .communication-icon li {
+  background-image: url(../images/icons/communication-white.svg) !important;
+}
+
+.section-wrapper.gallery-screen .communication-icon li:hover {
+  background-image: url(../images/icons/communication-black.svg) !important;
+}
+
+.section-wrapper.gallery-screen .newspaper-icon li {
+  background-image: url(../images/icons/newspaper-white.svg) !important;
+}
+
+.section-wrapper.gallery-screen .newspaper-icon li:hover {
+  background-image: url(../images/icons/newspaper-black.svg) !important;
+}
+
+.section-wrapper.gallery-screen .lock-icon li {
+  background-image: url(../images/icons/lock-icon-white.svg) !important;
+}
+
+.section-wrapper.gallery-screen .lock-icon li:hover {
+  background-image: url(../images/icons/lock-icon-black.svg) !important;
+}
+
+.section-wrapper.gallery-screen .gallery-icon li {
+  background-image: url(../images/icons/gallery-icon-white.svg);
+}
+
+.section-wrapper.gallery-screen .gallery-icon li:hover {
+  background-image: url(../images/icons/gallery-icon-black.svg) !important;
+}
+
+.section-wrapper.gallery-screen .search-icon li {
+  background-image: url(../images/icons/search-icon-white.svg) !important;
+}
+
+.section-wrapper.gallery-screen .search-icon li:hover {
+  background-image: url(../images/icons/search-icon-black.svg) !important;
+}
+
+.section-wrapper.gallery-screen .calendar-icon li {
+  background-image: url(../images/icons/calendar-icon.svg) !important;
+}
+
+.section-wrapper.gallery-screen .calendar-icon li:hover {
+  background-image: url(../images/icons/calendar-icon-black.svg) !important;
+}
+
+.section-wrapper.gallery-screen .mail-icon li {
+  background-image: url(../images/icons/mail-icon.svg) !important;
+}
+
+.section-wrapper.gallery-screen .mail-icon li:hover {
+  background-image: url(../images/icons/mail-icon-black.svg) !important;
+}
+
+.section-wrapper.gallery-screen .burger-icon li {
+  background-image: url(../images/icons/burger-standard.svg) !important;
+}
+
+.section-wrapper.gallery-screen .burger-icon li:hover {
+  background-image: url(../images/icons/burger-black.svg) !important;
+}
+
+.section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-view {
+  position: relative;
+}
+
+.section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-slides .rsts-slide {
+  width: 100%;
+}
+
+.section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-slides .rsts-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-prev {
+  background-image: url(../images/icons/prev_big.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 72px;
+  z-index: 9999999;
+  border: none;
+  width: 72px;
+  height: 46px;
+  webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-size: 72px 46px;
+}
+
+.section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-prev:hover {
+  background-image: url(../images/icons/prev_big_black.svg);
+  background-color: transparent;
+}
+
+.section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-prev span {
+  display: block;
+  width: 72px;
+  height: 46px;
+}
+
+.section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-next {
+  background-image: url(../images/icons/next_big.svg);
+  background-repeat: no-repeat;
+  background-size: 72px 46px;
+  position: absolute;
+  top: 50%;
+  right: 72px;
+  z-index: 9999999;
+  border: none;
+  width: 72px;
+  height: 46px;
+  webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-next:hover {
+  background-image: url(../images/icons/next_big_black.svg);
+  background-color: transparent;
+}
+
+.section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-next span {
+  display: block;
+  width: 72px;
+  height: 46px;
+}
+
+.section-wrapper.index-menu-screen {
+  position: fixed;
+  top: -100vh;
+}
+
+.section-wrapper.index-menu-screen .zuerich, .section-wrapper.index-menu-screen .diagonale, .section-wrapper.index-menu-screen .logo, .section-wrapper.index-menu-screen .menu-site-nav {
+  position: fixed;
+}
+
+.section-wrapper.index-menu-screen .zuerich {
+  left: 0;
+}
+
+.section-wrapper.menu-open {
+  top: 0 !important;
+  display: block;
+}
+
+.section-wrapper.closed {
+  display: none !important;
+}
+
+.section-wrapper.menu-screen .logo {
+  height: 70px;
+}
+
+.section-wrapper.menu-screen .logo img {
+  height: 70px;
+  width: auto;
+}
+
+.section-wrapper.menu-screen .menu-site-nav {
+  mix-blend-mode: multiply;
+}
+
+.section-wrapper.menu-screen #mainnav {
+  position: relative;
+  height: 100%;
+  top: 0;
+}
+
+.section-wrapper.menu-screen .main-nav {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  mix-blend-mode: multiply;
+}
+
+.section-wrapper.menu-screen .main-nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.section-wrapper.menu-screen .main-nav ul li a {
+  color: #e30059;
+  font-size: 48px;
+  line-height: 80px;
+  font-family: "Helvetica Neue LT W01_85 Heavy";
+  cursor: pointer;
+}
+
+.section-wrapper.menu-screen .main-nav ul li a:hover, .section-wrapper.menu-screen .main-nav ul li a:active, .section-wrapper.menu-screen .main-nav ul li a:focus, .section-wrapper.menu-screen .main-nav ul li a.trail, .section-wrapper.menu-screen .main-nav ul li a.active {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.section-wrapper.menu-screen .main-nav ul li ul {
+  position: relative;
+  top: 0;
+  transform: translateY(0);
+  margin-left: 25px;
+}
+
+.section-wrapper.menu-screen .main-nav ul li ul li a {
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Helvetica Neue LT W01_95 Black";
+  cursor: pointer;
+}
+
+.section-wrapper.standard-screen .logo {
+  height: 70px;
+  width: 100%;
+}
+
+.section-wrapper.standard-screen .logo img {
+  height: 70px;
+  width: auto;
+}
+
+/*Personen*/
+.personen .item_person {
+  float: left;
+  width: 30%;
+  margin-right: 3%;
+  margin-bottom: 24px;
+}
+
+.personen .item_person p {
+  margin-top: 10px;
+  margin-bottom: 0 !important;
+}
+
+.personen .item_person:nth-child(3n+4) {
+  margin-right: 0 !important;
+}
+
+.personen figure img {
+  width: 100%;
+}
+
+/*METANAVI ACTIVE*/
+.kontakt .mail-icon li {
+  background-image: url(../images/icons/mail-icon-black.svg) !important;
+}
+
+.suche .search-icon li {
+  background-image: url(../images/icons/search-icon-black.svg) !important;
+}
+
+.galerie .gallery-icon li {
+  background-image: url(../images/icons/gallery-icon-black.svg) !important;
+}
+
+.kalender .calendar-icon li {
+  background-image: url(../images/icons/calendar-icon-black.svg) !important;
+}
+
+.kontakt p strong {
+  color: #009ee0;
+}
+
+/* FONTS.COM COLOPHON ENTFERNEN */
+#mti_wfs_colophon {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .section-wrapper .lehrpersonen-content p {
+    column-count: 1;
+  }
+  .section-wrapper .ferientermine-content table tr {
+    display: inline;
+  }
+  .section-wrapper .ferientermine-content table tr td {
+    width: 100%;
+    float: left;
+  }
+  .section-wrapper .ferientermine-content table tr td:last-child {
+    margin-bottom: 20px;
+  }
+  .section-wrapper .semestertermine-content table tr {
+    display: inline;
+  }
+  .section-wrapper .semestertermine-content table tr td {
+    width: 100%;
+    float: left;
+  }
+  .section-wrapper .semestertermine-content table tr td p {
+    margin-bottom: 0 !important;
+  }
+  .section-wrapper .semestertermine-content table tr td:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-height: 789px) {
+  .section-wrapper {
+    /* INDEX MENU TEST */
+    /* MENU SEITE */
+  }
+  .section-wrapper.standard-screen {
+    overflow: overlay;
+    overflow-x: hidden;
+    position: fixed;
+    -webkit-overflow-scrolling: touch;
+  }
+  .section-wrapper .content-wrapper {
+    top: 300px;
+  }
+  .section-wrapper .content-wrapper .content-inner {
+    float: left;
+    top: -100px;
+  }
+  .section-wrapper .content-wrapper .content-inner .personen {
+    float: left;
+  }
+  .section-wrapper .content-wrapper .content-inner .personen h1 {
+    float: left;
+  }
+  .section-wrapper .content-wrapper .content-inner .personen .item_person {
+    min-height: 185px;
+  }
+  .section-wrapper.index-menu-screen {
+    overflow: overlay;
+    overflow-x: hidden;
+    position: fixed;
+    top: -100vh;
+  }
+  .section-wrapper.index-menu-screen .zuerich, .section-wrapper.index-menu-screen .diagonale, .section-wrapper.index-menu-screen .logo, .section-wrapper.index-menu-screen .menu-site-nav {
+    position: fixed;
+  }
+  .section-wrapper.index-menu-screen .zuerich {
+    left: 0;
+  }
+  .section-wrapper.menu-open {
+    top: 0 !important;
+    display: block;
+  }
+  .section-wrapper.closed {
+    display: none !important;
+  }
+  .section-wrapper.menu-screen .logo {
+    display: none;
+  }
+  .section-wrapper.menu-screen .menu-site-nav {
+    mix-blend-mode: luminosity;
+  }
+  .section-wrapper.menu-screen #mainnav {
+    position: relative;
+    height: 100%;
+    top: 200px;
+  }
+  .section-wrapper.menu-screen .main-nav {
+    position: absolute;
+    left: 20%;
+    top: -80px;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    mix-blend-mode: multiply;
+  }
+  .section-wrapper.menu-screen .main-nav ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .section-wrapper.menu-screen .main-nav ul li a {
+    color: #e30059;
+    font-size: 48px;
+    line-height: 80px;
+    font-family: "Helvetica Neue LT W01_85 Heavy";
+    cursor: pointer;
+  }
+  .section-wrapper.menu-screen .main-nav ul li a:hover, .section-wrapper.menu-screen .main-nav ul li a:active, .section-wrapper.menu-screen .main-nav ul li a:focus, .section-wrapper.menu-screen .main-nav ul li a.trail, .section-wrapper.menu-screen .main-nav ul li a.active {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+  }
+  .section-wrapper.menu-screen .main-nav ul li ul {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    margin-left: 25px;
+  }
+  .section-wrapper.menu-screen .main-nav ul li ul li a {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Helvetica Neue LT W01_95 Black";
+    cursor: pointer;
+    padding: 4px 0;
+    display: inline-block;
+  }
+}
+
+/* MEDIA QUERY MAX WIDTH 768px */
+@media (max-width: 768px) {
+  .section-wrapper header {
+    height: 80px;
+  }
+  .section-wrapper .nav {
+    top: 26px;
+    right: 24px;
+  }
+  .section-wrapper .nav .burger-icon li {
+    width: 28px;
+    height: 24px;
+    margin-top: 0;
+  }
+  .section-wrapper .nav .calendar-icon, .section-wrapper .nav .mail-icon, .section-wrapper .nav .gallery-icon, .section-wrapper .nav .lock-icon, .section-wrapper .nav .search-icon, .newspaper-icon{
+    display: none;
+  }
+  .section-wrapper .logo {
+    top: 16px;
+    left: 24px;
+    height: 70px;
+    width: 100%;
+  }
+  .section-wrapper .logo img {
+    max-width: 65%;
+    height: auto !important;
+  }
+  .section-wrapper .zuerich {
+    width: 100% !important;
+    height: auto !important;
+    left: 0;
+  }
+  .section-wrapper.menu-screen .logo {
+    height: 70px;
+    width: 100%;
+  }
+  .section-wrapper.menu-screen #mainnav {
+    top: 200px;
+  }
+  .section-wrapper.menu-screen .main-nav {
+    left: 17.5%;
+    top: -80px;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .section-wrapper.menu-screen .main-nav ul {
+    top: 70px;
+    transform: none;
+  }
+  .section-wrapper.menu-screen .main-nav ul li a {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .section-wrapper.menu-screen .main-nav ul li ul {
+    margin-left: 13px;
+  }
+  .section-wrapper.standard-screen .logo {
+    height: 70px;
+    width: 100%;
+  }
+  .section-wrapper.standard-screen .content-wrapper {
+    width: 100%;
+    padding: 0 24px;
+    top: 200px;
+    left: auto;
+    position: relative;
+    float: left;
+    -webkit-overflow-scrolling: touch;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner {
+    top: -100px;
+    left: auto;
+    word-wrap: break-word;
+    float: left;
+    width: 100%;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner h1 {
+    width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(6n+7) {
+    clear: left;
+  }
+  .section-wrapper.standard-screen .mod_rocksolid_slider .rsts-prev {
+    background-image: url(../images/icons/prev_mobile.svg);
+    left: 30px;
+    border: none;
+    webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .section-wrapper.standard-screen .mod_rocksolid_slider .rsts-prev:hover {
+    background-image: url(../images/icons/prev_mobile_pink.svg);
+    border: none;
+    background-color: transparent;
+  }
+  .section-wrapper.standard-screen .mod_rocksolid_slider .rsts-prev span {
+    width: 20px;
+    height: 15px;
+  }
+  .section-wrapper.standard-screen .mod_rocksolid_slider .rsts-next {
+    background-image: url(../images/icons/next_mobile.svg);
+    right: 30px;
+    border: none;
+    webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .section-wrapper.standard-screen .mod_rocksolid_slider .rsts-next:hover {
+    background-image: url(../images/icons/next_mobile_pink.svg);
+    border: none;
+    background-color: transparent;
+  }
+  .section-wrapper.standard-screen .mod_rocksolid_slider .rsts-next span {
+    width: 20px;
+    height: 15px;
+  }
+  .section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-prev {
+    background-image: url(../images/icons/prev_mobile.svg);
+    left: 24px;
+    webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-prev:hover {
+    background-image: url(../images/icons/prev_mobile_black.svg);
+  }
+  .section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-prev span {
+    width: 20px;
+    height: 15px;
+  }
+  .section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-next {
+    background-image: url(../images/icons/next_mobile.svg);
+    right: 24px;
+    webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-next:hover {
+    background-image: url(../images/icons/next_mobile_black.svg);
+  }
+  .section-wrapper.gallery-screen .mod_rocksolid_slider .rsts-next span {
+    width: 20px;
+    height: 15px;
+  }
+}
+
+@media (min-width: 646px) and (max-width: 767px) {
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation {
+    width: 600px;
+  }
+}
+
+@media (min-width: 547px) and (max-width: 647px) {
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation {
+    width: 499px;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(5n+5) {
+    margin-right: 0 !important;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(5n+6) {
+    clear: left !important;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(6n+6) {
+    margin-right: 6px;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(6n+7) {
+    clear: none;
+  }
+}
+
+@media (min-width: 446px) and (max-width: 546px) {
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation {
+    width: 398px;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(4n+4) {
+    margin-right: 0 !important;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(4n+5) {
+    clear: left !important;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(6n+6) {
+    margin-right: 6px;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(6n+7) {
+    clear: none;
+  }
+}
+
+@media (max-width: 445px) {
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation {
+    width: 297px;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(3n+3) {
+    margin-right: 0 !important;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(3n+4) {
+    clear: left !important;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(6n+6) {
+    margin-right: 6px;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(6n+7) {
+    clear: none;
+  }
+}
+
+@media (min-width: 468px) and (max-width: 767px) {
+  .section-wrapper .welcome-text {
+    width: 60%;
+  }
+}
+
+@media (max-width: 467px) {
+  .section-wrapper .welcome-text {
+    width: 211px;
+  }
+}
+
+/* ORIGAMI MEDIA QUERIES */
+@media (max-width: 1023px) {
+  .origamis {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1524px) {
+  .section-wrapper .origami-aktuell-left {
+    left: 43px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .section-wrapper .origami-unterricht-right-big {
+    right: 43px;
+  }
+}
+
+@media (max-width: 1410px) {
+  .section-wrapper .origami-schule-left-small {
+    left: 83px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .section-wrapper .origami-default-left {
+    width: 193px;
+  }
+}
+
+@media (max-width: 1390px) {
+  .section-wrapper .origami-default-right {
+    right: 43px;
+  }
+}
+
+@media (max-width: 1375px) {
+  .section-wrapper .origami-unterricht-left-big {
+    left: 43px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .section-wrapper .origami-aktuell-right {
+    width: 203px;
+  }
+  .section-wrapper .origami-weitere-right-big {
+    width: 163px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .section-wrapper .origami-weitere-left-big {
+    width: 166px;
+  }
+}
+
+@media (max-width: 1292px) {
+  .section-wrapper .origami-aktuell-left {
+    width: 166px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .section-wrapper .origami-schule-right {
+    width: 166px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .section-wrapper .origami-default-left {
+    width: 103px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-wrapper .origami-aktuell-right {
+    width: 163px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .section-wrapper .origami-weitere-left-big {
+    width: 96px;
+  }
+}
+
+@media (max-width: 1155px) {
+  .section-wrapper .origami-aktuell-left {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .section-wrapper .origami-weitere-right-small {
+    right: 100px;
+  }
+}
+
+@media (max-width: 1135px) {
+  .section-wrapper .origami-unterricht-right-big {
+    width: 123px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .section-wrapper .origami-unterricht-right-small {
+    right: 100px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .section-wrapper .origami-weitere-right-big {
+    width: 113px;
+  }
+}
+
+@media (max-width: 1115px) {
+  .section-wrapper .origami-aktuell-right {
+    width: 116px;
+  }
+  .section-wrapper .origami-schule-right {
+    width: 116px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section-wrapper .origami-unterricht-left-big {
+    width: 106px;
+  }
+}
+
+@media (max-width: 1045px) {
+  .section-wrapper .origami-unterricht-left-small {
+    left: 92px;
+  }
+}
+
+@media (max-width: 360px) {
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li {
+    width: 45% !important;
+    height: auto !important;
+    display: block;
+    float: left !important;
+    margin-left: 0;
+    text-indent: 0;
+    margin-right: 6px;
+    margin-bottom: 6px;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li a {
+    width: 100% !important;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(3n+4) {
+    clear: none !important;
+  }
+  .section-wrapper.standard-screen .content-wrapper .content-inner .lehrpersonen-navigation li:nth-child(3n+3) {
+    margin-right: 6px !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .section-wrapper header {
+    height: 90px;
+  }
+  .section-wrapper.standard-screen .logo img {
+    height: 60px !important;
+  }
+  .section-wrapper.menu-screen .logo img {
+    height: 60px !important;
+    width: auto;
+  }
+  .section-wrapper .logo img {
+    height: 60px !important;
+    width: auto;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .section-wrapper header {
+    height: 90px;
+  }
+  .section-wrapper.standard-screen .logo img {
+    height: 60px !important;
+  }
+  .section-wrapper.menu-screen .logo img {
+    height: 60px !important;
+    width: auto;
+  }
+  .section-wrapper .logo img {
+    height: 60px !important;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px){
+	.mod_navigation.main-nav li.siteNavHideDesktop{
+		display:none;
+	}
+}
